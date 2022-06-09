@@ -39,9 +39,18 @@
             <joint name="floating_base_joint" type="floating">
               <origin rpy="0 0 0" xyz="0 0 0"/>
               <parent link="world"/>
-              <child link="trunk"/>
+              <child link="base_link"/>
             </joint>
     </xacro:if>
+
+
+    <link name="base_link" />
+
+   <joint name="floating_base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="trunk"/>
+   </joint>
 
     <link name="trunk">
         <visual>
