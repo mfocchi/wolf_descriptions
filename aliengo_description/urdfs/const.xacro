@@ -40,6 +40,8 @@
     <xacro:property name="hip_position_min" value="${-70*PI/180.0}"/>
     <xacro:property name="hip_velocity_max" value="20"/>
     <xacro:property name="hip_torque_max" value="44"/>
+    <xacro:property name="upperleg_position_max" value="${PI}"/>
+    <xacro:property name="upperleg_position_min" value="${-PI}"/>
     <xacro:property name="upperleg_velocity_max" value="20"/>
     <xacro:property name="upperleg_torque_max" value="44"/>
     <xacro:property name="lowerleg_position_max" value="${-37*PI/180.0}"/>
